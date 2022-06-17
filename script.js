@@ -7,8 +7,6 @@ setInterval(() => {
     let jm = document.getElementById('jm');
     let mn = document.getElementById('mn');
     let dt = document.getElementById('dt');
-    let dt2 = document.getElementById('dt2');
-
 
     let j = new Date().getHours();
     let m = new Date().getMinutes();
@@ -33,5 +31,4 @@ setInterval(() => {
     mn.style.strokeDashoffset = 566 - (566 * m) / 60;
     // 60 menit
     dt.style.strokeDashoffset = 635 - (635 * d) / 60;
-    dt2.style.strokeDashoffset = 565 - (565 * d) / 60;
 })
