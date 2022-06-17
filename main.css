@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #040f24;
+}
+
+#clock {
+	display: flex;
+	gap: 45px;
+}
+#clock .cir {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#clock .cir svg {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	transform: rotate(270deg);
+}
+#clock .cir svg circle {
+	width: 100%;
+	height: 100%;
+	fill: transparent;
+	stroke-width: 5;
+	stroke-dasharray: 3px;
+	stroke: #191919;
+	transform: translate(5px,5px);
+}
+#clock .cir svg circle:nth-child(2){
+    stroke: rgb(20, 248, 96);
+	stroke-dasharray: var(--das);
+}
+#clock div {
+	position: absolute;
+	text-align: center;
+	font-weight: 500;
+	color: #fff;
+	font-size: 1em;
+}
+#clock .psm {
+	position: relative;
+	font-size: 1em;
+	transform: translateX(-20px);
+}
+
+#sm {
+    position: relative;
+    right: 112px;
+    bottom: 85px;
+}
+#jam {
+    position: relative;
+    left: 50px;
+    bottom: 85px;
+}
+#menit {
+    position: relative;
+    left:80px;
+    bottom: 85px;
+}
+#detik {
+    position: relative;
+    left:110px;
+    bottom: 85px;
+}
+h1 {
+    color: #fff;
+    position: relative;
+    bottom: 125px;
+    font-family: 'Noto Sans';
+    left: 220px;
+}
+#footer {
+    position: relative;
+    background-color: #061837;
+    border-radius: 5px;
+    border-color: #0a285c;
+    color: #c8daf9;
+    font-family: 'Noto Sans';
+    top: 440px;
+    right: 575px;
+	font-size: 8px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+.glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+  
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #c8daf9, 0 0 20px #c8daf9, 0 0 30px #4783eb, 0 0 40px #4783eb, 0 0 50px #4783eb, 0 0 60px #4783eb, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #c8daf9, 0 0 30px #ff4da6, 0 0 40px #4783eb, 0 0 50px #4783eb, 0 0 60px #4783eb, 0 0 70px #4783eb, 0 0 80px #ff4da6;
+    }
+}
